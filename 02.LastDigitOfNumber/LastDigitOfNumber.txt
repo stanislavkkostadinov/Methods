@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problem02.LastDigitOfNumber
+{
+    class LastDigitOfNumber
+    {
+        private static string[] numbers = {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
+
+        static void print(int num)
+        {
+            int lastDigit = num%10;
+            Console.WriteLine(numbers[lastDigit]);
+        }
+        static void Main()
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            print(n);
+        }
+    }
+}

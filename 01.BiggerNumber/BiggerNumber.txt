@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BiggerNumber
+{
+    class BiggerNumber
+    {
+
+        static int GetMax(int firstNumb, int secondNumb)
+        {
+            int c = Math.Max(firstNumb, secondNumb);
+            return c;
+        }
+        
+        static void Main()
+        {
+            Console.Write(Enter the firs number );
+            int firstNumb = int.Parse(Console.ReadLine());
+            Console.Write(Enter the second number );
+            int secondNumb = int.Parse(Console.ReadLine());
+            int max = GetMax(firstNumb, secondNumb);
+            Console.WriteLine(The bigger number is {0}!,max);
+
+        }
+    }
+}
